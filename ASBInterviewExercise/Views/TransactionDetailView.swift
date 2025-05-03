@@ -11,7 +11,6 @@ import SwiftUI
 struct TransactionDetailView: View {
     let transaction: Transaction
     
-    
     @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
@@ -81,11 +80,10 @@ struct TransactionDetailView: View {
             }
             .padding()
             .navigationTitle("Transaction Details")
-            .navigationBarTitleDisplayMode(getTitleDisplayMode())
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        
                         presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("Close")
@@ -95,10 +93,6 @@ struct TransactionDetailView: View {
             }
             .background(Color(UIColor.systemGroupedBackground).ignoresSafeArea())
         }
-    }
-    
-    private func getTitleDisplayMode() -> NavigationBarItem.TitleDisplayMode {
-        return .inline
     }
     
     // Format currency amount
@@ -134,3 +128,4 @@ struct TransactionDetailView_Previews: PreviewProvider {
         TransactionDetailView(transaction: Transaction.sampleData[0])
     }
 }
+

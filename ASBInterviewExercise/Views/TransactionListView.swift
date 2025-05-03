@@ -28,7 +28,6 @@ struct TransactionListView: View {
         }
     }()
     
-    @State private var showingDetail = false
     @State private var selectedTransaction: Transaction?
     @State private var isShowingSearchBar = false
     
@@ -82,7 +81,6 @@ struct TransactionListView: View {
                                         TransactionRow(transaction: transaction, viewModel: viewModel)
                                             .onTapGesture {
                                                 selectedTransaction = transaction
-                                                showingDetail = true
                                             }
                                     }
                                 }
@@ -167,12 +165,8 @@ struct TransactionListView: View {
                     }
                 }
             }
-            .sheet(isPresented: $showingDetail, onDismiss: {
-                selectedTransaction = nil
-            }) {
-                if let transaction = selectedTransaction {
-                    TransactionDetailView(transaction: transaction)
-                }
+            .sheet(item: $selectedTransaction) { transaction in
+                TransactionDetailView(transaction: transaction)
             }
         }
     }
