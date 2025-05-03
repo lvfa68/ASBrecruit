@@ -46,7 +46,7 @@ Below are screenshots demonstrating the key features of the application:
 
 The main transaction list shows all transactions grouped by date, with color-coded indicators for income (green) and expenses (red).
 
-![Transaction List - All Transactions](screenshots/p1.png)
+<img src="screenshots/p1.png" alt="Transaction List - All Transactions" width="350"/>
 
 ### Filtered Views
 
@@ -54,11 +54,11 @@ The application supports filtering by transaction type:
 
 **Income Transactions Only:**
 
-![Transaction List - Income Filter](screenshots/p2.png)
+<img src="screenshots/p2.png" alt="Transaction List - All Transactions" width="350"/>
 
 **Expense Transactions Only:**
 
-![Transaction List - Expense Filter](screenshots/p3.png)
+<img src="screenshots/p3.png" alt="Transaction List - All Transactions" width="350"/>
 
 ### Transaction Details
 
@@ -66,23 +66,23 @@ Tapping on a transaction opens a detailed view:
 
 **Income Transaction Details:**
 
-![Transaction Details - Income](screenshots/p6.png)
+<img src="screenshots/p6.png" alt="Transaction List - All Transactions" width="350"/>
 
 **Expense Transaction Details:**
 
-![Transaction Details - Expense](screenshots/p7.png)
+<img src="screenshots/p7.png" alt="Transaction List - All Transactions" width="350"/>
 
 ### Search Functionality
 
 Users can search for specific transactions:
 
-![Transaction Search](screenshots/p5.png)
+<img src="screenshots/p5.png" alt="Transaction List - All Transactions" width="350"/>
 
 ### Loading States
 
 The app shows a loading indicator while fetching data:
 
-![Loading State](screenshots/p8.png)
+<img src="screenshots/p8.png" alt="Transaction List - All Transactions" width="350"/>
 
 ## 4. Solution Implementation
 
